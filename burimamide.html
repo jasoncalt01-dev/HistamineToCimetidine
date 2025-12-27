@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burimamide - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Burimamide</h1>
+                <p class="section-description" style="font-size: 1.15rem;">Single-view summary</p>
+            </div>
+
+            <!-- Evolution Snapshot -->
+            <div style="background: rgba(15, 22, 41, 0.6); border: 2px solid rgba(0, 255, 255, 0.25); border-radius: 16px; padding: 1.5rem; margin-bottom: 3rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; align-items: center; justify-items: center;">
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Na-Guanylhistaimne.png" alt="Precursor Nα-Guanylhistamine" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain; opacity: 0.7;">
+                    </div>
+                    <div style="font-size: 2rem; color: #00ffff; text-align: center;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Burimamide.png" alt="Burimamide" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: rgba(15, 22, 41, 0.7); border: 2px solid rgba(0, 255, 255, 0.35); border-radius: 18px; padding: 2.5rem; box-shadow: 0 20px 45px rgba(0,0,0,0.35);">
+                <h2 style="color: #00ffff; margin-bottom: 1.5rem; font-size: 2rem; text-align: center;"><i class="fas fa-vial"></i> Burimamide at a glance</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; align-items: center;">
+                    <div style="color: #cbd5e1; line-height: 1.8; font-size: 1.02rem; display: flex; flex-direction: column; gap: 0.9rem;">
+                        <ul style="margin: 0; padding-left: 1.2rem; list-style: disc; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li>
+                                <strong style="color: #00ffff;">Substitution with Isothiourea:</strong> Guanidine group was substituted with an <span class="iso-tooltip">isothiourea group
+                                    <span class="tooltip-image" style="width: 240px;"><img src="Isothiourea .png" alt="Isothiourea group" style="width: 100%; height: auto; border-radius: 8px;"></span>
+                                </span>. This change was investigated after scientists noticed a reduced effect on antagonism from it.
+                            </li>
+                            <li>
+                                <strong style="color: #00ffff;">Chain Length Logic:</strong>
+                                <ul style="margin-top: 0.5rem; margin-left: 1.2rem; list-style: circle; display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li><strong>Histamine:</strong> The natural 2-C chain is the specific length required for the amine group to bind to the agonist site.</li>
+                                    <li><strong>Extended Chains:</strong> Lengthening the chain to 3 or 4 carbons allows the terminal group to bypass the agonist site and anchor into a distinct antagonist site instead.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong style="color: #00ffff;">Transition to Thiourea:</strong>
+                                <ul style="margin-top: 0.5rem; margin-left: 1.2rem; list-style: circle; display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li>The isothiourea group was subsequently replaced by a <span class="thio-tooltip">thiourea group
+                                            <span class="tooltip-image" style="width: 240px;"><img src="Thiourea.png" alt="Thiourea group" style="width: 100%; height: auto; border-radius: 8px;"></span>
+                                        </span>.</li>
+                                    <li><strong>Reason:</strong> The thiourea group showed <span class="thio-tooltip" style="text-decoration: underline; text-decoration-style: solid; text-decoration-color: #00ffff;">no agonist activity
+                                            <span class="tooltip-text tooltip-text-compact">Pure antagonist</span>
+                                        </span>.</li>
+                                    <li><strong>Mechanistic Insight:</strong> Since thiourea is neutral at physiological pH, this confirmed that an <span class="thio-tooltip" style="text-decoration: underline; text-decoration-style: solid; text-decoration-color: #00ffff;">ionic interaction
+                                            <span class="tooltip-text tooltip-text-compact">Charged group</span>
+                                        </span> is required for agonist activity.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong style="color: #00ffff;">Formation of Burimamide:</strong> 4-C chain with the neutral thiourea group.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                <a href="h2-receptors.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Previous: Nα-Guanylhisamine+</a>
+                <a href="metiamide.html" class="btn btn-primary">Next: Metiamide+ <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

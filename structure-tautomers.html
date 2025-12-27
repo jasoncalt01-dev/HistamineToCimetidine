@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure & Tautomers - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link active">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Structure & Prototropic Equilibria</h1>
+                <p class="section-description" style="font-size: 1.2rem;">
+                    Understanding tautomers and conformations of histamine
+                </p>
+            </div>
+
+            <!-- Ionization of Histamine -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 2px solid rgba(0, 255, 255, 0.3); border-radius: 20px; padding: 3rem; margin-bottom: 4rem;">
+                <h2 style="color: #00ffff; margin-bottom: 2rem; font-size: 2rem; text-align: center;">
+                    <i class="fas fa-atom"></i> Ionization of Histamine
+                </h2>
+                <div style="padding: 2rem; background: rgba(0, 255, 255, 0.05); border-radius: 15px; margin-bottom: 2rem;">
+                    <p style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                        Histamine has two basic nitrogen atoms. At <span class="ionization-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">low pH<span class="tooltip-text-compact">acidic</span></span> conditions, both nitrogens are protonated, giving histamine a <span class="ionization-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">dicationic form<span class="tooltip-text-compact">+2 charge</span></span>. As the pH increases to <span class="ionization-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">physiological levels<span class="tooltip-text-compact">pH ~7.4</span></span>, the nitrogen within the ring that closer to the chain tends to lose a proton while the amino group remains protonated, resulting in a <span class="ionization-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">monocationic form<span class="tooltip-text-compact">+1 charge</span></span>, which is the predominant species in the body. In <span class="ionization-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">high pH<span class="tooltip-text-compact">basic</span></span> conditions, both nitrogens lose their protons, forming a <span class="ionization-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">neutral<span class="tooltip-text-compact">uncharged</span></span> molecule.
+                    </p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 15px;">
+                    <img src="ionization.png" alt="Ionization of Histamine" style="width: 100%; height: auto; display: block;">
+                </div>
+            </div>
+
+            <!-- Tautomeric Equilibria -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 2px solid rgba(0, 255, 255, 0.3); border-radius: 20px; padding: 3rem; margin-bottom: 4rem;">
+                <h2 style="color: #00ffff; margin-bottom: 2rem; font-size: 2rem; text-align: center;">
+                    <i class="fas fa-exchange-alt"></i> Prototropic Equilibrium of Histamine
+                </h2>
+                <div style="padding: 2rem; background: rgba(0, 255, 255, 0.05); border-radius: 15px; margin-bottom: 2rem;">
+                    <p style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem; text-align: justify;">
+                        The activity of histamine is mainly determined by its molecular structure and the equilibria between 
+                        its tautomeric and conformational forms. The histamine molecule contains an <span class="imidazole-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">imidazole ring<span class="tooltip-image"><img src="imidazole.png" alt="Imidazole Structure" style="width: 100%; height: auto; border-radius: 8px;"></span></span>, 
+                        which can exist in tautomeric forms due to proton exchange between nitrogen atoms. These tautomers influence 
+                        histamine's ability to interact with its receptors, such as <span class="receptor-tooltip" style="color: #00ffff; font-weight: 600; text-decoration: underline; cursor: help; position: relative;">H₁ and H₂ receptors<span class="tooltip-text">H1 receptors is mainly located on smooth muscles for allergic responses, H2 receptors mainly located in the stomach for gastric acid regulation.</span></span> <a class="ref-link" href="info.html#ref9">[9]</a>.
+                    </p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                    <img src="tautomers.png" alt="Tautomeric Equilibria" style="width: 100%; height: auto; display: block;">
+                </div>
+                <div style="padding: 1.5rem; background: rgba(0, 255, 255, 0.1); border-radius: 10px; border-left: 4px solid #00ffff;">
+                    <p style="color: #cbd5e1; line-height: 1.8;">
+                        Histamine exists in two <strong>tautomeric forms</strong>:
+                    </p>
+                    <ul style="color: #cbd5e1; line-height: 1.8; margin-top: 1rem; padding-left: 2rem;">
+                        <li><strong style="color: #00ffff;">Tautomer I (N-τ-H-histamine)</strong>: The nitrogen far from the side chain has the hydrogen</li>
+                        <li><strong style="color: #00ffff;">Tautomer II (N-π-H-histamine)</strong>: The nitrogen close to the side chain has the hydrogen</li>
+                    </ul>
+                    <p style="color: #cbd5e1; line-height: 1.8; margin-top: 1rem;">
+                        <strong>Key Finding:</strong> 4-Substituted histamines display different tautomer concentrations when compared to the native molecule.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4-Methylhistamine Conformation -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 2px solid rgba(0, 255, 255, 0.3); border-radius: 20px; padding: 3rem; margin-bottom: 4rem;">
+                <h2 style="color: #00ffff; margin-bottom: 2rem; font-size: 2rem; text-align: center;">
+                    <i class="fas fa-molecular"></i> Conformation of 4-Substituted Histamine
+                </h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                    <div style="background: rgba(0, 255, 255, 0.05); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #00ffff; margin-bottom: 1rem; text-align: center;">Conformer I</h3>
+                        <div style="background: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                            <img src="conformer1.png" alt="Conformer I" style="width: 100%; height: auto; display: block;">
+                        </div>
+                        <p style="color: #cbd5e1; line-height: 1.8; margin-top: 1rem;">
+                            <strong style="color: #ef4444;">NOT favored</strong> due to large steric interaction between Me and the side chain
+                        </p>
+                    </div>
+                    <div style="background: rgba(0, 255, 255, 0.05); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #00ffff; margin-bottom: 1rem; text-align: center;">Conformer II</h3>
+                        <div style="background: white; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                            <img src="conformer2.png" alt="Conformer II" style="width: 100%; height: auto; display: block;">
+                        </div>
+                        <p style="color: #cbd5e1; line-height: 1.8; margin-top: 1rem;">
+                            <strong style="color: #22c55e;">Preferred</strong> conformation with less steric hindrance
+                        </p>
+                    </div>
+                </div>
+                <div style="padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(0, 255, 255, 0.1)); border-radius: 10px; border: 2px solid rgba(139, 92, 246, 0.4);">
+                    <h3 style="color: #8b5cf6; margin-bottom: 1rem;">
+                        <i class="fas fa-lightbulb"></i> Key Observation
+                    </h3>
+                    <p style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem;">
+                        The selectivity observed for 4-methylhistamine indicated that:
+                    </p>
+                    <p style="color: #00ffff; line-height: 1.8; font-size: 1.1rem; margin-top: 0.5rem; font-weight: 600;">
+                        Conformer I is required for H₁ receptor binding, 
+                        while Conformer II is required for H₂ receptor binding.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div style="display: flex; justify-content: space-between; margin-top: 4rem;">
+                <a href="histamine-body.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Previous: Histamine in the Body
+                </a>
+                <a href="sar-studies.html" class="btn btn-primary">
+                    Next: SAR Studies <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

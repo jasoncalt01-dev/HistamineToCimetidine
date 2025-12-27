@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metiamide - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Metiamide</h1>
+                <p class="section-description" style="font-size: 1.15rem;">Single-view summary</p>
+            </div>
+
+            <!-- Evolution Snapshot -->
+            <div style="background: rgba(15, 22, 41, 0.6); border: 2px solid rgba(0, 255, 255, 0.25); border-radius: 16px; padding: 1.5rem; margin-bottom: 3rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; align-items: center; justify-items: center;">
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Burimamide.png" alt="Precursor Burimamide" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain; opacity: 0.7;">
+                    </div>
+                    <div style="font-size: 2rem; color: #00ffff; text-align: center;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Metiamide.png" alt="Metiamide" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: rgba(15, 22, 41, 0.7); border: 2px solid rgba(0, 255, 255, 0.35); border-radius: 18px; padding: 2.5rem; box-shadow: 0 20px 45px rgba(0,0,0,0.35); position: relative;">
+                <h2 style="color: #00ffff; margin-bottom: 1.5rem; font-size: 2rem; text-align: center;"><i class="fas fa-vial"></i> Metiamide at a glance</h2>
+                <a href="sar-studies.html#agonist-activity" style="position: absolute; top: 10px; right: 10px; background: rgba(236, 72, 153, 0.08); color: #ec4899; padding: 0.5rem 0.9rem; border-radius: 999px; font-weight: 700; text-decoration: none; border: 1px solid rgba(236, 72, 153, 0.7); box-shadow: 0 0 14px rgba(236, 72, 153, 0.5), 0 12px 25px rgba(0,0,0,0.35);">
+                    ⚠ Refer back to 4-Methylhistamine activity
+                </a>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; align-items: center;">
+                    <div style="color: #cbd5e1; line-height: 1.8; font-size: 1.02rem; display: flex; flex-direction: column; gap: 0.9rem;">
+                        <ul style="margin: 0; padding-left: 1.2rem; list-style: disc; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li>
+                                <strong style="color: #00ffff;">Importance of the Imidazole Ring:</strong>
+                                <ul style="margin-top: 0.5rem; margin-left: 1.2rem; list-style: circle; display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li>The imidazole ring is the foundation derived from histamine itself, making it crucial for <strong>both antagonist and agonist activity</strong>.</li>
+                                    <li>Optimizing the ring's <strong>pKa value to be closer to that of histamine</strong> is key for achieving <strong>better binding affinity and antagonist activity</strong>.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong class="meta-tooltip" style="color: #00ffff;">Limitation of Burimamide:
+                                    <span class="tooltip-image" style="width: 480px;"><img src="Limitation of Burimamide.png" alt="Limitation of Burimamide" style="width: 100%; height: auto; border-radius: 8px;"></span>
+                                </strong>
+                                <ul style="margin-top: 0.5rem; margin-left: 1.2rem; list-style: circle; display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li>Side chain acts as an <strong>electron-donating group</strong>.</li>
+                                    <li>This effect <strong>raises the pKa</strong>, making the imidazole ring more likely to be protonated at physiological pH, which <strong>reduces its binding efficiency</strong> compared to histamine.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong class="meta-tooltip" style="color: #00ffff;">Development of Metiamide:
+                                    <span class="tooltip-image" style="width: 260px;"><img src="Development of Metiamide.png" alt="Development of Metiamide" style="width: 100%; height: auto; border-radius: 8px;"></span>
+                                </strong>
+                                <ul style="margin-top: 0.5rem; margin-left: 1.2rem; list-style: circle; display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li><strong>Sulfur Insertion:</strong> A <span class="antagonist-tooltip" style="text-decoration: underline; text-decoration-style: solid; text-decoration-color: #00ffff;">sulfur atom
+                                            <span class="tooltip-text tooltip-text-compact">Electron withdrawing</span>
+                                        </span> was inserted into the side chain to <strong>lower the pKa</strong> of the ring.</li>
+                                    <li><strong>Methylation:</strong> A methyl group was added at C-4 of the imidazole ring.</li>
+                                    <li><strong>Tautomer Stabilization:</strong> These changes favor <strong>Tautomer I</strong>, the form preferred for binding with H₂ receptor.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                <a href="burimamide.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Previous: Burimamide+</a>
+                <a href="cimetidine-synthesis.html" class="btn btn-primary">Next: Cimetidine+ <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

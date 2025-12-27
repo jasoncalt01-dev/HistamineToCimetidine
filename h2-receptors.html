@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nα-Guanylhistamine - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html" class="nav-link active">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Nα-Guanylhistamine</h1>
+                <p class="section-description" style="font-size: 1.2rem;">
+                    The first breakthrough in H₂-receptor antagonist development
+                </p>
+            </div>
+
+            <!-- Evolution Snapshot -->
+            <div style="background: rgba(15, 22, 41, 0.6); border: 2px solid rgba(0, 255, 255, 0.25); border-radius: 16px; padding: 1.5rem; margin-bottom: 3rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; align-items: center; justify-items: center;">
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Histamine-2.png" alt="Precursor Histamine" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain; opacity: 0.7;">
+                    </div>
+                    <div style="font-size: 2rem; color: #00ffff; text-align: center;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Na-Guanylhistaimne.png" alt="Nα-Guanylhistamine" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Discovery -->
+            <div style="background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(14, 165, 233, 0.1)); border: 2px solid rgba(0, 255, 255, 0.4); border-radius: 20px; padding: 3rem; margin-bottom: 4rem;">
+                <h2 style="color: #00ffff; margin-bottom: 2rem; font-size: 2rem; text-align: center;">
+                    <i class="fas fa-vial"></i> Nα-Guanylhistamine at a glance
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; align-items: center;">
+                    <div>
+                        <ul style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem; padding-left: 1.2rem; margin: 0; list-style: disc;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <strong style="color: #00ffff;">Discovery:</strong> <strong>Reported by James Black and co-workers in 1972</strong>, was identified as the first H₂-receptor partial antagonist.
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <strong style="color: #00ffff;">Mechanism of Action:</strong> Functions as a <strong>partial agonist (pA2=3.9)</strong> <a class="ref-link" href="info.html#ref12">[12]</a>, weakly activates the receptor while competing for the binding site.
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <strong style="color: #00ffff;">Therapeutic Effect:</strong> By blocking histamine from binding, it <span class="antagonist-tooltip">prevents full receptor activation
+                                    <span class="tooltip-text tooltip-text-compact">Only ~0.5% activity of histamine</span>
+                                </span>, resulting in a <strong>reduction of gastric acid release</strong>.
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <span class="image-preview-paragraph" style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem;">
+                                    <strong style="color: #00ffff;">Receptor Hypothesis:</strong> H₂ receptor contains two distinct binding regions:
+                                    <span class="image-preview image-preview-above binding-rotator">
+                                        <img class="binding-frame binding-frame-1" src="Guanylhistamine Binding Site.png" alt="Guanylhistamine binding site">
+                                        <img class="binding-frame binding-frame-2" src="Histamine Binding Site.png" alt="Histamine binding site">
+                                    </span>
+                                </span>
+                                <ul style="margin-top: 0.75rem; margin-left: 1.2rem; list-style: circle; color: #cbd5e1; line-height: 1.7;">
+                                    <li>A standard agonist region is accessible by histamine.</li>
+                                    <li>An antagonist region that is "out of reach" for histamine but accessible to Nα-Guanylhistamine.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Structure & Modification -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 2px solid rgba(139, 92, 246, 0.3); border-radius: 20px; padding: 3rem; margin-bottom: 4rem;">
+                <h2 style="color: #8b5cf6; margin-bottom: 2rem; font-size: 2rem; text-align: center;">
+                    <i class="fas fa-atom"></i> Key Structural Modification
+                </h2>
+                <div style="background: rgba(139, 92, 246, 0.1); padding: 2rem; border-radius: 15px; margin-bottom: 2rem; border-left: 4px solid #8b5cf6;">
+                    <h3 style="color: #8b5cf6; margin-bottom: 1rem;">The Modification</h3>
+                    <p style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem;">
+                        A <span class="guanidinium-tooltip">guanidinium group
+                            <span class="tooltip-text tooltip-text-compact">Delocalized, permanently protonated cation that strengthens H₂ binding.</span>
+                            <span class="tooltip-image" style="width: 240px;"><img src="Guanidinium group.png" alt="Guanidinium group structure" style="width: 100%; height: auto; border-radius: 8px;"></span>
+                        </span> was added to the terminal of histamine, replacing the simple amine group, creating a permanent positive charge at physiological pH.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div style="display: flex; justify-content: space-between; margin-top: 4rem;">
+                <a href="sar-studies.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Previous: SAR Studies
+                </a>
+                <a href="burimamide.html" class="btn btn-primary">
+                    Next: Burimamide+ <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cimetidine Synthesis - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html" class="nav-link active">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="synthesis-page" style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow-x: hidden; overflow-y: auto;">
+        
+        <div class="container" style="position: relative; z-index: 10; max-width: 1200px;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Synthesis of Cimetidine</h1>
+                <p class="section-description" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                    A three-step synthetic route from 4-methylhistamine to Cimetidine, the first marketed H₂ receptor antagonist.
+                </p>
+            </div>
+
+            <!-- Evolution Snapshot -->
+            <div style="background: rgba(15, 22, 41, 0.6); border: 2px solid rgba(0, 255, 255, 0.25); border-radius: 16px; padding: 1.5rem; margin-bottom: 3rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; align-items: center; justify-items: center;">
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Metiamide.png" alt="Precursor Metiamide" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain; opacity: 0.7;">
+                    </div>
+                    <div style="font-size: 2rem; color: #00ffff; text-align: center;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div style="width: 100%; max-width: 260px; text-align: center;">
+                        <img src="Cimetidine.png" alt="Cimetidine" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Synthesis Scheme - 3 Clickable Steps -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 2px solid rgba(0, 255, 255, 0.3); border-radius: 20px; padding: 3rem; margin-bottom: 3rem; box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);">
+                <h2 style="color: #00ffff; margin-bottom: 1rem; text-align: center; font-size: 2rem;">Synthetic Route</h2>
+                <p style="color: #94a3b8; text-align: center; margin-bottom: 2rem;">
+                    <i class="fas fa-hand-pointer"></i> Click each step to show/hide the image
+                </p>
+                
+                <!-- Step 1 -->
+                 <div class="synthesis-step-container collapsible-step" data-target="step1-img" data-icon="icon-step1" style="margin-bottom: 3rem; cursor: pointer;">
+                     <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid rgba(0, 255, 255, 0.3);">
+                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                             <div style="background: #00ffff; color: #0a0e27; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">1</div>
+                             <h3 style="color: #333; margin: 0; font-size: 1.3rem;">Step 1: Thioester formation (Nucleophilic Substitution 1)</h3>
+                             <div style="margin-left: auto; color: #666;"><i class="fas fa-chevron-down" id="icon-step1"></i></div>
+                         </div>
+                         <img id="step1-img" class="step-img" src="synthesis-step1.png" alt="Synthesis Step 1" style="width: 100%; max-width: 100%; height: auto; display: none; object-fit: contain;">
+                     </div>
+                 </div>
+
+                <!-- Step 2 -->
+                 <div class="synthesis-step-container collapsible-step" data-target="step2-img" data-icon="icon-step2" style="margin-bottom: 3rem; cursor: pointer;">
+                     <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid rgba(14, 165, 233, 0.3);">
+                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                             <div style="background: #0ea5e9; color: #0a0e27; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">2</div>
+                             <h3 style="color: #333; margin: 0; font-size: 1.3rem;">Step 2: Cyanoguanidine addition (Addition-Elimination)</h3>
+                             <div style="margin-left: auto; color: #666;"><i class="fas fa-chevron-down" id="icon-step2"></i></div>
+                         </div>
+                         <img id="step2-img" class="step-img" src="synthesis-step2.png" alt="Synthesis Step 2" style="width: 100%; max-width: 100%; height: auto; display: none; object-fit: contain;">
+                     </div>
+                 </div>
+
+                <!-- Step 3 -->
+                 <div class="synthesis-step-container collapsible-step" data-target="step3-img" data-icon="icon-step3" style="margin-bottom: 3rem; cursor: pointer;">
+                     <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid rgba(139, 92, 246, 0.3);">
+                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                             <div style="background: #8b5cf6; color: #0a0e27; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">3</div>
+                             <h3 style="color: #333; margin: 0; font-size: 1.3rem;">Step 3: Methylamine addition (Addition-Elimination)</h3>
+                             <div style="margin-left: auto; color: #666;"><i class="fas fa-chevron-down" id="icon-step3"></i></div>
+                         </div>
+                         <img id="step3-img" class="step-img" src="synthesis-step3.png" alt="Synthesis Step 3" style="width: 100%; max-width: 100%; height: auto; display: none; object-fit: contain;">
+                     </div>
+                 </div>
+
+
+                <!-- Key Features removed -->
+            </div>
+
+            <!-- Historical Context -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(0, 255, 255, 0.2); border-radius: 20px; padding: 2.5rem; margin-bottom: 3rem;">
+                <h2 style="color: #00ffff; margin-bottom: 1.5rem; font-size: 2rem;">Historical Significance</h2>
+                <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1rem;">
+                    Cimetidine (marketed as <strong>Tagamet®</strong>) was the first commercially available H₂ receptor antagonist, 
+                    developed by <strong>James Black</strong> and his team at Smith, Kline & French in 1972.
+                </p>
+                <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 1rem;">
+                    This synthesis represents a breakthrough in medicinal chemistry by successfully replacing the toxic 
+                    thiourea group in metiamide with a cyanoguanidine moiety, eliminating kidney toxicity while retaining 
+                    excellent H₂ antagonist activity.
+                </p>
+                <p style="color: #cbd5e1; line-height: 1.8;">
+                    The drug revolutionized the treatment of peptic ulcers and gastroesophageal reflux disease (GERD), 
+                    becoming one of the first blockbuster drugs and earning James Black the Nobel Prize in Physiology or Medicine in 1988.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 3rem;">
+                <a href="metiamide.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Previous: Metiamide+</a>
+                <a href="drug-development.html" class="btn btn-primary">Back to Overview</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.collapsible-step').forEach(step => {
+            step.addEventListener('click', () => {
+                const img = step.querySelector('.step-img');
+                const icon = step.querySelector('.fas.fa-chevron-down, .fas.fa-chevron-up');
+                const isHidden = img.style.display === 'none' || img.style.display === '';
+                img.style.display = isHidden ? 'block' : 'none';
+                if (icon) icon.className = isHidden ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+            });
+        });
+    </script>
+
+</body>
+</html>

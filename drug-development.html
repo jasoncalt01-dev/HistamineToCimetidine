@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Development Timeline - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle active">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow: hidden;">
+
+
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Drug Development Timeline</h1>
+                <p class="section-description" style="font-size: 1.2rem;">
+                    The journey from histamine to Cimetidine: James Black's masterpiece
+                </p>
+            </div>
+
+            <p class="timeline-hint" style="margin-bottom: 2rem;">Click a stage to zoom in for details. Click again to collapse.</p>
+
+            <!-- Interactive Timeline -->
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-step">1</span>
+                        <span class="timeline-year">~1970</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-content">
+                            <span class="timeline-tag">Lead scaffold</span>
+                            <h3><a class="timeline-link" href="histamine-body.html">Histamine</a><span class="timeline-link-hint">⇦ Click to know more</span></h3>
+                            <p>The naturally occurring endogenous ligand used as the starting point for the investigation.</p>
+                            <div class="timeline-detail">
+                                <ul class="timeline-list">
+                                    <li>Researchers hypothesized the existence of H₂R because traditional H₁ antagonists failed to inhibit gastric acid secretion <a class="ref-link" href="info.html#ref11">[11]</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="Histamine-2.png" alt="Histamine molecular structure">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-step">2</span>
+                        <span class="timeline-year">1972</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-content">
+                            <span class="timeline-tag">Proof of concept</span>
+                            <h3><a class="timeline-link" href="h2-receptors.html">Nα-Guanylhistamine</a><span class="timeline-link-hint">⇦ Click to know more</span></h3>
+                            <p>Adding a guanidine group delivered a permanently charged tail that partially blocked the receptor.</p>
+                            <div class="timeline-detail">
+                                <ul class="timeline-list">
+                                    <li>Acted as a partial agonist (pA2=3.9) <a class="ref-link" href="info.html#ref12">[12]</a>, weakly stimulated acid secretion but not as strong as the effect of histamine does.</li>
+                                    <li>Too weak for therapy but validated the H₂ antagonist hypothesis.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="Na-Guanylhistaimne.png" alt="Nα-Guanylhistamine illustration">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-step">3</span>
+                        <span class="timeline-year">1972</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-content">
+                            <span class="timeline-tag">First successful antagonist</span>
+                            <h3><a class="timeline-link" href="burimamide.html">Burimamide</a><span class="timeline-link-hint">⇦ Click to know more</span></h3>
+                            <p>The alkyl chain was extended to 4-C and the thiourea group was N-methylated.</p>
+                            <div class="timeline-detail">
+                                <ul class="timeline-list">
+                                    <li>100× more active antagonist than Nα-Guanylhistamine <a class="ref-link" href="info.html#ref13">[13]</a>.</li>
+                                    <li>Although it was a successful antagonist, it had poor oral bioavailability.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="Burimamide.png" alt="Burimamide structural sketch">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-step">4</span>
+                        <span class="timeline-year">1973</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-content">
+                            <span class="timeline-tag">Potent but toxic</span>
+                            <h3><a class="timeline-link" href="metiamide.html">Metiamide</a><span class="timeline-link-hint">⇦ Click to know more</span></h3>
+                            <p>A methyl group in side chain was replaced with a sulfur atom and a methyl group was added to the 4-position on imidazole ring.</p>
+                            <div class="timeline-detail">
+                                <ul class="timeline-list">
+                                    <li>Developed to solve the oral bioavailability problems.</li>
+                                    <li>10× more potency than Burimamide.</li>
+                                    <li>Clinical use revealed kidney toxicity and a rare but severe disease called <span class="antagonist-tooltip" style="text-decoration: underline; text-decoration-style: solid; text-decoration-color: #00ffff;">agranulocytosis
+                                            <span class="tooltip-text tooltip-text-compact">Decreased white blood cell count</span>
+                                        </span> <a class="ref-link" href="info.html#ref14">[14]</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="Metiamide.png" alt="Metiamide molecular rendering">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item cimetidine">
+                    <div class="timeline-marker">
+                        <span class="timeline-step"><i class="fas fa-star"></i></span>
+                        <span class="timeline-year">1976</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-content">
+                            <span class="timeline-tag">Breakthrough</span>
+                            <h3><a class="timeline-link" href="cimetidine-synthesis.html">Cimetidine</a><span class="timeline-link-hint">⇦ Click to know more</span></h3>
+                            <p>The N-methylated thiourea group was replaced with a cyanoguanidine group.</p>
+                            <div class="timeline-detail">
+                                <ul class="timeline-list">
+                                    <li>Successfully replacing the toxic features of Metiamide while maintaining high potency.</li>
+                                    <li>Was found to inhibit cytochrome P450 enzymes, leading to potential interactions with other medications <a class="ref-link" href="info.html#ref15">[15]</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="Cimetidine.png" alt="Cimetidine molecular structure">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-step">6</span>
+                        <span class="timeline-year">1981</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-content">
+                            <span class="timeline-tag">Next generation</span>
+                            <h3>Ranitidine</h3>
+                            <p>Swapped the imidazole ring for a furan ring and more.</p>
+                            <div class="timeline-detail">
+                                <ul class="timeline-list">
+                                    <li>Discovered in 1976 by John Bradshaw (Glaxo).</li>
+                                    <li>4–10× more potency than Cimetidine <a class="ref-link" href="info.html#ref16">[16]</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="Ranitidine.png" alt="Ranitidine structural comparison">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <div style="display: flex; justify-content: flex-start; margin-top: 6rem;">
+                <a href="sar-studies.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Previous: SAR Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR Insights - H2R Pharmacology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h2>H2R</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="histamine-body.html" class="nav-link">Histamine in the Body</a></li>
+                <li class="nav-item"><a href="structure-tautomers.html" class="nav-link">Structure & Tautomers</a></li>
+                <li class="nav-item"><a href="sar-studies.html" class="nav-link active">SAR Studies</a></li>
+                <li class="nav-item dropdown">
+                    <a href="drug-development.html" class="nav-link dropdown-toggle">Development Timeline <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="drug-development.html">Overview</a>
+                        <a href="h2-receptors.html">Nα-Guanylhisamine+</a>
+                        <a href="burimamide.html">Burimamide+</a>
+                        <a href="metiamide.html">Metiamide+</a>
+                        <a href="cimetidine-synthesis.html">Cimetidine+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section style="min-height: 100vh; padding: 120px 0 80px; background: #0a0e27; position: relative; overflow: hidden;">
+
+
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">SAR Studies on Histamine and Analogues</h1>
+                <p class="section-description" style="font-size: 1.2rem;">
+                    Identifying structural requirements for H₁ and H₂ receptor activity
+                </p>
+            </div>
+
+            <!-- 4-Methylhistamine Activity Table -->
+            <div style="background: rgba(15, 22, 41, 0.6); backdrop-filter: blur(10px); border: 2px solid rgba(0, 255, 255, 0.3); border-radius: 20px; padding: 3rem; margin-bottom: 4rem;">
+                <h2 id="agonist-activity" style="color: #00ffff; margin-bottom: 2rem; font-size: 2rem; text-align: center;">
+                    <i class="fas fa-table"></i> Agonist Activities in Heterocyclic Analogs of Histamine
+                </h2>
+                
+                <!-- Collapsible Image 1 -->
+                <div class="collapsible-image-container" style="margin-bottom: 2rem;">
+                    <div class="collapsible-header" onclick="toggleImage('image1')" style="background: rgba(0, 255, 255, 0.2); padding: 1.5rem; border-radius: 15px; cursor: pointer; border: 2px solid rgba(0, 255, 255, 0.4); display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;">
+                        <span style="color: #00ffff; font-size: 1.1rem; font-weight: 600;">
+                            <i class="fas fa-flask"></i> 4-Methylhistamine activity
+                        </span>
+                        <i id="icon1" class="fas fa-chevron-down" style="color: #00ffff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div id="image1" class="collapsible-content" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+                        <div style="background: white; padding: 2rem; border-radius: 0 0 15px 15px; margin-top: 0.5rem;">
+                            <img src="histamine-activity-1.png" alt="Histamine Activity 1" style="width: 100%; height: auto; display: block;">
+                        </div>
+                    </div>
+                                </div>
+
+                <!-- Collapsible Image 2 -->
+                <div class="collapsible-image-container" style="margin-bottom: 2rem;">
+                    <div class="collapsible-header" onclick="toggleImage('image2')" style="background: rgba(0, 255, 255, 0.2); padding: 1.5rem; border-radius: 15px; cursor: pointer; border: 2px solid rgba(0, 255, 255, 0.4); display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;">
+                        <span style="color: #00ffff; font-size: 1.1rem; font-weight: 600;">
+                            <i class="fas fa-vial"></i> Other ring systems (pyridine, thiazole) activities
+                        </span>
+                        <i id="icon2" class="fas fa-chevron-down" style="color: #00ffff; transition: transform 0.3s ease;"></i>
+                            </div>
+                    <div id="image2" class="collapsible-content" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+                        <div style="background: white; padding: 2rem; border-radius: 0 0 15px 15px; margin-top: 0.5rem;">
+                            <img src="histamine-activity-2.png" alt="Histamine Activity 2" style="width: 100%; height: auto; display: block;">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding: 1.5rem; background: rgba(0, 255, 255, 0.1); border-radius: 10px; border-left: 4px solid #00ffff;">
+                    <p style="color: #cbd5e1; line-height: 1.8; font-size: 1.05rem;">
+                        <strong style="color: #00ffff;">Key Finding:</strong> Graham J. Durant and co-workers found out that 4-Methylhistamine shows <strong>H₁ activity of only 0.23</strong> but maintains <strong>H₂ activity at 39</strong>. This further demonstrates that different conformations are required for each receptor type, where 4-Methylhistamine has a relatively higher selectivity in H₂ than H₁. Meanwhile when the imidazole ring is replaced with other ring systems (pyridine, thiazole), <strong>activity at H₂ is greatly diminished</strong> <a class="ref-link" href="info.html#ref10">[10]</a>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- H1 and H2 SAR Comparison -->
+            <h2 style="color: #00ffff; margin-bottom: 3rem; font-size: 2rem; text-align: center;">SAR Requirements Comparison</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 4rem;">
+                <!-- H1 Requirements -->
+                <div style="background: rgba(255, 102, 102, 0.1); border: 2px solid rgba(255, 102, 102, 0.4); border-radius: 20px; padding: 2.5rem;">
+                    <h3 style="color: #ff6666; margin-bottom: 1.5rem; font-size: 1.5rem; text-align: center;">
+                        <i class="fas fa-check-circle"></i> H₁ Receptor Requirements
+                    </h3>
+                    <div style="color: #cbd5e1; line-height: 2;">
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 102, 102, 0.1); border-radius: 8px;">
+                            <strong style="color: #ff6666;">1. Side-chain cation</strong><br>
+                            <span style="font-size: 0.95rem; color: #94a3b8;">Protonated amine (NH₃⁺) essential for ionic interaction</span>
+                        </div>
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 102, 102, 0.1); border-radius: 8px;">
+                            <strong style="color: #ff6666;">2. Heteroaromatic ring</strong><br>
+                            <span style="font-size: 0.95rem; color: #94a3b8;">Nitrogen with lone pair for H-bonding</span>
+                        </div>
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 102, 102, 0.1); border-radius: 8px;">
+                            <strong style="color: #ff6666;">3. Free rotation allowed</strong><br>
+                            <span style="font-size: 0.95rem; color: #94a3b8;">But preferred Conformer I (With steric hindrance)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- H2 Requirements -->
+                <div style="background: rgba(0, 255, 255, 0.1); border: 2px solid rgba(0, 255, 255, 0.4); border-radius: 20px; padding: 2.5rem;">
+                    <h3 style="color: #00ffff; margin-bottom: 1.5rem; font-size: 1.5rem; text-align: center;">
+                        <i class="fas fa-check-circle"></i> H₂ Receptor Requirements
+                    </h3>
+                    <div style="color: #cbd5e1; line-height: 2;">
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(0, 255, 255, 0.1); border-radius: 8px;">
+                            <strong style="color: #00ffff;">1. Side-chain cation</strong><br>
+                            <span style="font-size: 0.95rem; color: #94a3b8;">Same as H₁ - protonated amine needed</span>
+                        </div>
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(0, 255, 255, 0.1); border-radius: 8px;">
+                            <strong style="color: #00ffff;">2. Specific tautomer required</strong><br>
+                            <span style="font-size: 0.95rem; color: #94a3b8;">Nᵗ-H tautomer (I) is essential</span>
+                        </div>
+                        <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(0, 255, 255, 0.1); border-radius: 8px;">
+                            <strong style="color: #00ffff;">3. Imidazole H-bonding</strong><br>
+                            <span style="font-size: 0.95rem; color: #94a3b8;">Acts as both donor and acceptor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div style="display: flex; justify-content: space-between; margin-top: 4rem;">
+                <a href="structure-tautomers.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Previous: Structure & Tautomers
+                </a>
+                <a href="drug-development.html" class="btn btn-primary">
+                    Next: Development Timeline <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleImage(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon' + id.slice(-1));
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+                }
+        }
+    </script>
+</body>
+</html>
